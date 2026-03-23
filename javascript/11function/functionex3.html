@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      a{
+        text-decoration: none;
+        font-size: larger;
+        color: red;
+        display: block;
+      }
+      input{
+        display: block;
+        
+      }
+      
+    </style>
+</head>
+<body>
+
+    <script>
+        
+        function anchor_tag(link,name){
+            document.write(` <a href="${link} " target="_blank" rel="noopener noreferrer">${name}</a>`);
+        }
+        anchor_tag("https://www.youtube.com/","Youtube");
+        anchor_tag("https://www.google.com/","Google");
+        anchor_tag("https://javascript.info/","Javascript");
+
+
+
+
+        function input(type){
+            document.write(`<input type="${type}">`);
+        }
+        input("text");
+        input("number");
+        input("checkbox");
+    
+    </script>
+</body>
+</html>

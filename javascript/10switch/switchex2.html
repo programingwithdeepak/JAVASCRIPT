@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Enter first number"));
+        let b = Number(prompt("Enter second number"));
+        let c = prompt("What operation do you want (add, sub, multi, div)");
+
+        switch (c) {
+            case "add":
+                console.log(a + b);
+                break;
+
+            case "sub":
+                console.log(a - b);
+                break;
+
+            case "multi":
+                console.log(a * b);
+                break;
+
+            case "div":
+                console.log(a / b);
+                break;
+
+            default:
+                console.log("Enter ");
+        }
+    </script>
+</body>
+
+</html>

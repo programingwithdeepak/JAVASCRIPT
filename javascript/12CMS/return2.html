@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calc(num1, num2) {
+            let res1 = num1 + num2;
+            let res2 = num1 - num2;
+            let res3 = num1 * num2;
+            let res4 = num1 / num2;
+            return { add: res1, sub: res2, mul: res3, div: res4 };
+
+        }
+
+        let res = calc(10, 20);
+        for (let key in res) {
+                document.write("<h1>" + key + " : " + res[key] + "</h1>");
+            }
+    </script>
+</body>
+
+</html>

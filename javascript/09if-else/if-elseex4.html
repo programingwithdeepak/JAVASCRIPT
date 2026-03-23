@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Images</title>
+</head>
+
+<body>
+    <script>
+        const alphabetMap = {
+            a: { word: "Apple", img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" },
+            b: { word: "Ball", img: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png" },
+            c: { word: "Cat", img: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" },
+            d: { word: "Dog", img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDog.jpg" },
+            e: { word: "Elephant", img: "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" },
+            f: { word: "Fish", img: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Clown_fish_in_the_Andaman_Coral_Reef.jpg" },
+            g: { word: "Grapes", img: "https://upload.wikimedia.org/wikipedia/commons/4/44/Table_grapes_on_white.jpg" },
+            h: { word: "House", img: "https://upload.wikimedia.org/wikipedia/commons/6/6b/House_in_Germany.jpg" },
+            i: { word: "Ice cream", img: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Strawberry_ice_cream_cone_%28cropped%29.jpg" },
+            j: { word: "Jug", img: "https://upload.wikimedia.org/wikipedia/commons/7/75/Jug_with_handle.jpg" },
+            k: { word: "Kite", img: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kite_flying.jpg" },
+            l: { word: "Lion", img: "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" },
+            m: { word: "Monkey", img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Monkey_portrait.jpg" },
+            n: { word: "Nest", img: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Bird_nest_in_tree.jpg" },
+            o: { word: "Orange", img: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" },
+            p: { word: "Parrot", img: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Blue-fronted_Amazon_parrot.jpg" },
+            q: { word: "Queen", img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chess_queen_white.jpg" },
+            r: { word: "Rabbit", img: "https://upload.wikimedia.org/wikipedia/commons/7/70/Rabbit_in_montana.jpg" },
+            s: { word: "Sun", img: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" },
+            t: { word: "Tiger", img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" },
+            u: { word: "Umbrella", img: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Umbrella_in_rain.jpg" },
+            v: { word: "Van", img: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Volkswagen_Type_2.jpg" },
+            w: { word: "Watch", img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Watch_example.jpg" },
+            x: { word: "Xylophone", img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Xylophone.jpg" },
+            y: { word: "Yak", img: "https://upload.wikimedia.org/wikipedia/commons/8/80/Yak_in_Tibet.jpg" },
+            z: { word: "Zebra", img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Zebra_Equus_quagga.jpg" }
+        };
+
+        let user = prompt("Enter an alphabet (a-z):").toLowerCase();
+
+        if (alphabetMap[user]) {
+            let { word, img } = alphabetMap[user];
+            document.write(`<h1>${word}</h1><img src="${img}" width="200">`);
+        } else {
+            document.write("<h1>Invalid input!</h1>");
+        }
+    </script>
+</body>
+
+</html>

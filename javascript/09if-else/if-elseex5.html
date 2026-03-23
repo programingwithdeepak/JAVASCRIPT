@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const db = [
+                  "user@ducat.com" ,"12345" 
+                
+            ];
+
+
+
+            let email = "user@ducat.com";
+            let pass = "12345";
+
+            if (email == "" & pass == "") {
+                res = "Please Enter Email Id And Passsword";
+            }
+            else if (email == "") {
+                res = "PLease Fill email id";
+            }
+            else if (pass == "") {
+                res = "Please Enter Password";
+            }
+            else {
+
+                if (db[0] != email & db[1] != pass) {
+                    res = "Email And Pass do not match";
+                }
+                else if (db[0] != email) {
+                    res = "Email Do not match"
+                }
+                else if (db[1] != pass) {
+                    res = "pass Do not match"
+                }
+                else {
+                    res = "Welcome";
+                }
+
+            }
+
+            console.log(res);
+    </script>
+</body>
+</html>

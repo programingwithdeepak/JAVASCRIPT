@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+       
+        .btn{
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 2%;
+            background-color: antiquewhite;
+            margin-bottom: 20px;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            background-color: azure;
+        }
+        .main-box{
+            display: flex;
+            flex-wrap:wrap ;
+            row-gap: 10px;
+            gap: 20px;
+        
+
+
+        }
+        #box-1,#box-2,#box-3{
+            height: 150px;
+            width: 32.2%;
+            border: 2px solid;
+            background-color: aquamarine;
+            
+        }
+
+        #box-4,#box-5,#box-6{
+            height: 150px;
+            width: 32.2%;
+            border: 2px solid;
+            background-color: rgb(255, 127, 157);
+            
+        }
+
+        #box-7,#box-8,#box-9{
+            height: 150px;
+            width: 32.2%;
+            border: 2px solid;
+            background-color: rgb(12, 20, 173);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button onclick=" tab('all')">ALL</button>
+        <button onclick="tab('tab-1')">TAB 1</button>
+        <button onclick="tab('tab-2')">TAB 2</button>
+        <button onclick="tab('tab-3')">TAB 3</button>
+    </div>
+
+    <div class="main-box">
+       <div id="box-1"></div>     
+       <div id="box-2"></div>     
+       <div id="box-3"></div>
+       <div id="box-4"></div>
+       <div id="box-5"></div>
+       <div id="box-6"></div>  
+       <div id="box-7"></div>
+       <div id="box-8"></div>
+       <div id="box-9"></div>   
+
+    </div>
+    <script>
+        function tab(data) {
+            if (data =='all') {
+                document.getElementById('box-1').style.display = 'block';
+                document.getElementById('box-2').style.display = 'block';
+                document.getElementById('box-3').style.display = 'block';
+                document.getElementById('box-4').style.display = 'block';
+                document.getElementById('box-5').style.display = 'block';
+                document.getElementById('box-6').style.display = 'block';
+                document.getElementById('box-7').style.display = 'block';
+                document.getElementById('box-8').style.display = 'block';
+                document.getElementById('box-9').style.display = 'block';
+            
+            }
+            else if (data == 'tab-1') {
+                document.getElementById('box-1').style.display = 'block';
+                document.getElementById('box-2').style.display = 'block';
+                document.getElementById('box-3').style.display = 'block';
+                document.getElementById('box-4').style.display = 'none';
+                document.getElementById('box-5').style.display = 'none';
+                document.getElementById('box-6').style.display = 'none';
+                document.getElementById('box-7').style.display = 'none';
+                document.getElementById('box-8').style.display = 'none';
+                document.getElementById('box-9').style.display = 'none';
+            }
+            else if (data == 'tab-2') {
+                document.getElementById('box-1').style.display = 'none';
+                document.getElementById('box-2').style.display = 'none';
+                document.getElementById('box-3').style.display = 'none';
+                document.getElementById('box-4').style.display = 'block';
+                document.getElementById('box-5').style.display = 'block';
+                document.getElementById('box-6').style.display = 'block';
+                document.getElementById('box-7').style.display = 'none';
+                document.getElementById('box-8').style.display = 'none';
+                document.getElementById('box-9').style.display = 'none';
+            }
+            else if (data =='tab-3') {
+                document.getElementById('box-1').style.display = 'none';
+                document.getElementById('box-2').style.display = 'none';
+                document.getElementById('box-3').style.display = 'none';
+                document.getElementById('box-4').style.display = 'none';
+                document.getElementById('box-5').style.display = 'none';
+                document.getElementById('box-6').style.display = 'none';
+                document.getElementById('box-7').style.display = 'block';
+                document.getElementById('box-8').style.display = 'block';
+                document.getElementById('box-9').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

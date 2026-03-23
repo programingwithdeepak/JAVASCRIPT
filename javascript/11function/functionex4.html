@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            background-color: #404040;
+            padding: 2% 5%;
+        }
+
+        ul li {
+            color: white;
+            list-style: none;
+        }
+
+        #login {
+            width: 25%;
+            height: 25vh;
+            background-color: gold;
+            margin: 10vh auto;
+            display: none;
+        }
+
+        #reg {
+            width: 25%;
+            height: 25vh;
+            background-color: tomato;
+            margin: 10vh auto;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li onclick="tab('login')">login</li>
+        <li onclick="tab('register')">register</li>
+    </ul>
+
+    <div id="login">
+        <h1>Login</h1>
+    </div>
+
+    <div id="reg">
+        <h1>register</h1>
+    </div>
+
+
+
+
+
+
+    <script>
+        function tab(data) {
+            if (data == 'login') {
+                document.getElementById('reg').style.display = 'none'
+                document.getElementById('login').style.display = 'block'
+            }
+            else if (data == 'register') {
+                document.getElementById('login').style.display = 'none'
+                document.getElementById('reg').style.display = 'block'
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

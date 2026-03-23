@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // normal function
+        function hello(){
+            return "welcome user";
+        }
+         
+        const fun1 = function hello(){
+            return "welcome user"
+        }
+
+        console.log(hello());
+         console.log(fun1());
+
+         // anomynous function 
+         const fun2= function(){
+           return "welcome fun2";
+         }
+
+         console.log(fun2());
+        
+
+         // arrow function
+
+         function fun3(){
+        return "fun3";
+         }
+       
+         const fun4 = function(){
+            return "fun4";
+         }
+
+         const fun5 =(data)=>`fun5 n${data}`;
+
+         console.log(fun3());
+         console.log(fun4());
+         console.log(fun5("welcome"));
+         
+    </script>
+</body>
+</html>

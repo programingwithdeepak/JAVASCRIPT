@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+    <script>
+        let user = prompt("Enter an alphabet (a-e):");
+        let res = "";
+        let img = "";
+
+        if (user == "a") {
+            res = "Apple";
+            img = "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg";
+        }
+        else if (user == "b") {
+            res = "Ball";
+            img = "https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png";
+        }
+        else if (user == "c") {
+            res = "Cat";
+            img = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg";
+        }
+        else if (user == "d") {
+            res = "Doll";
+            img = "https://upload.wikimedia.org/wikipedia/commons/0/07/Rag_doll.jpg";
+        }
+        else if (user == "e") {
+            res = "Elephant";
+            img = "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg";
+        }
+        else {
+            res = "Invalid input!";
+        }
+
+
+        document.write(`<h1>${res}</h1><img src="${img}" width="200">`);
+
+    </script>
+</body>
+
+</html>
