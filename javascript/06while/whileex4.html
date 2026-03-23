@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg1{
+            background-color: aqua;
+        }
+         .bg2{
+            background-color: rgb(208, 255, 0);
+        }
+         .bg3{
+            background-color: rgb(255, 0, 0);
+        }
+         .bg4{
+            background-color: rgb(56, 15, 178);
+        }
+         .bg5{
+            background-color: rgba(109, 64, 64, 0.495);
+        }
+         .bg6{
+            background-color: rgb(255, 0, 242);
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            padding: 3%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+    <script>
+        let count = 1;
+        while(count<=6){
+            document.write(`<div class="box bg${count}" > Box${count} </div>`);
+            count++;
+        }
+        
+    </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0vh auto;
+            box-sizing: border-box;
+        }
+
+        /* main div */
+        .main {
+            width: 70%;
+            height: 99vh;
+            border: 5px solid brown;
+            border-radius: 30px;
+            background-color: whitesmoke;
+            position: relative;
+        }
+
+        /* right side div */
+        #cont {
+            width: 50%;
+            height: 70vh;
+            border: 2px solid;
+            border-radius: 20px;
+            position: absolute;
+            left: 65vh;
+            bottom: 15vh;
+            background-size: 100% 70vh;
+        }
+
+        #photo {
+            width: 25vh;
+            height: 35vh;
+            border: 2px solid;
+            border-radius: 10px;
+            position: absolute;
+            left: 40vh;
+            top: 15vh;
+
+            background-size: 100% 35vh;
+
+        }
+
+        .detail {
+            width: 50vh;
+            height: 50vh;
+            top: 15vh;
+            position: absolute;
+            left: 3vh;
+        }
+
+        .detail h2 {
+            line-height: 1.9;
+            margin-left: 10px;
+            margin-top: 20px;
+            color: aliceblue;
+
+        }
+
+        /* left side div */
+        .aside {
+            width: 30%;
+            height: 90vh;
+            border: 2px solid;
+            border-radius: 20px;
+            position: absolute;
+            left: 10vh;
+            top: 5vh;
+
+        }
+
+        section {
+            height: 60px;
+            padding-left: 10px;
+
+        }
+
+        #section1 {
+            height: 60px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+
+        .cl1 {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(0, 255, 255);
+            border-radius: 50%;
+            left: 25px;
+            position: absolute;
+            bottom: 1vh;
+
+        }
+
+        .cl2 {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(255, 0, 0);
+
+            border-radius: 50%;
+            left: 75px;
+            position: absolute;
+            bottom: 1vh;
+
+
+
+        }
+
+        .cl3 {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(0, 128, 0);
+            bottom: 1vh;
+            border-radius: 50%;
+            left: 125px;
+            position: absolute;
+
+        }
+
+        .cl4 {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(255, 255, 0);
+            bottom: 1vh;
+            border-radius: 50%;
+            left: 175px;
+            position: absolute;
+
+        }
+
+
+        .img1 {
+            height: 50px;
+            width: 50px;
+            background-image: url(yearimg1.jpeg);
+            position: absolute;
+            left: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img2 {
+            height: 50px;
+            width: 50px;
+            background-image: url(yearimg2.jpg);
+            position: absolute;
+            left: 80px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img3 {
+            height: 50px;
+            width: 50px;
+            background-image: url(yearimg3.jpeg);
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main div start -->
+    <div class="main">
+
+        <!-- left side div start -->
+        <div class="aside">
+
+            <!-- section 1 -->
+            <section id="section1">
+                <h4>Background Color</h4><br>
+                <div class="cl1" onclick="document.getElementById('cont').style.background='rgba(0, 255, 255, 0.1)'">
+                </div>
+                <div class="cl2" onclick="document.getElementById('cont').style.background='rgba(255, 0, 0,0.1)'"></div>
+                <div class="cl3" onclick="document.getElementById('cont').style.background='rgba(0, 128, 0, 0.1)'">
+                </div>
+                <div class="cl4" onclick="document.getElementById('cont').style.background='rgba(255, 255, 0, 0.1)'">
+                </div>
+
+            </section>
+            <hr>
+            <!-- section 2 -->
+            <section>
+                <h4>Text Transform</h4><br>
+                <button onclick="document.getElementById('name').style.textTransform='uppercase'">Upper</button>
+                <button onclick="document.getElementById('name').style.textTransform='lowercase'">Lower</button>
+                <button onclick="document.getElementById('name').style.textTransform='capitalize'">Capital</button>
+            </section>
+            <hr>
+            <!-- section 3 -->
+            <section>
+                <h4>Font Family</h4><br>
+                <button onclick="document.getElementById('name').style.fontFamily='cursive'">Theme 1</button>
+                <button onclick="document.getElementById('name').style.fontFamily='sans-serif'">Theme 2</button>
+                <button onclick="document.getElementById('name').style.fontFamily='fantasy'">Theme 3</button>
+            </section>
+            <hr>
+            <!-- section 4 -->
+            <section>
+                <h4>Text Shadow</h4><br>
+                <button onclick="document.getElementById('name').style.textShadow='2px 2px 5px gray'">Shd 1</button>
+                <button onclick="document.getElementById('name').style.textShadow='2px 2px 5px black'">Shd 2</button>
+                <button onclick="document.getElementById('name').style.textShadow='2px 2px 5px blue'">Shd 3</button>
+            </section>
+            <hr>
+            <!-- section 5 -->
+            <section>
+                <h4>Font Size</h4><br>
+                <button onclick="document.getElementById('name').style.fontSize='small'">Small</button>
+                <button onclick="document.getElementById('name').style.fontSize='Medium'">Medium</button>
+                <button onclick="document.getElementById('name').style.fontSize='large'">Large</button>
+            </section>
+            <hr>
+            <!-- section 6 -->
+            <section>
+                <h4>Text color</h4><br>
+                <button onclick="document.getElementById('name').style.color='red'">red</button>
+                <button onclick="document.getElementById('name').style.color='green'">green</button>
+                <button onclick="document.getElementById('name').style.color='blue'">blue</button>
+            </section>
+            <hr>
+            <!-- section 7 -->
+            <section>
+                <h4>letter spacing</h4><br>
+                <button onclick="document.getElementById('name').style.letterSpacing='1px'">1px</button>
+                <button onclick="document.getElementById('name').style.letterSpacing='2px'">2px</button>
+                <button onclick="document.getElementById('name').style.letterSpacing='3px'">3px</button>
+            </section>
+            <hr>
+            <!-- section 8 -->
+            <section>
+                <h4>image</h4><br>
+                <div class="img1" onclick="document.getElementById('cont').style.backgroundImage='url(yearimg1.jpeg)'">
+                </div>
+                <div class="img2" onclick="document.getElementById('cont').style.backgroundImage='url(yearimg2.jpg)'">
+                </div>
+                <div class="img3" onclick="document.getElementById('cont').style.backgroundImage='url(yearimg3.jpeg)'">
+                </div>
+
+            </section>
+
+
+        </div>
+
+        <!-- end left side div -->
+
+        <!-- start right side div -->
+        <div id="cont">
+            <div class="detail">
+                <h2 id="name">🎆 Happy New Year 🎆 <br>
+                    Wishing you a year full of new hopes, joy,<br>
+                    success and endless happiness. <br>
+                    From Deepak Chaudhary</h2>
+
+            </div>
+
+            <!-- photo -->
+            <!-- <div id="photo"></div> -->
+        </div>
+
+        <!-- end right side div -->
+    </div>
+
+
+
+
+    <!-- javascript -->
+    <script>
+        // document.getElementById('cont').style.background = 'pink';
+        document.getElementById('cont').style.backgroundImage = "url('yearimg3.jpeg')";
+    </script>
+</body>
+
+</html>

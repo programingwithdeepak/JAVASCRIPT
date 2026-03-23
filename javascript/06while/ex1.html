@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg1{background-color: antiquewhite;}
+        .bg2{background-color:rebeccapurple;}
+        .bg3{background-color: red;}
+        .bg4{background-color: gold;}
+        .bg4{background-color: black;}
+
+        .box{
+            width: 20vh;
+            height: 20vh;
+            float: left;
+            margin-left: 1%;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let start=1;
+        while(start<=5){
+            document.write(`<div class="box bg${start}"></div>`)
+            start++;
+        }
+    </script>
+</body>
+</html>

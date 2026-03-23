@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cards</title>
+    <style>
+        .card {
+            background: burlywood;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 180px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const users = [
+            { name: 'name1',
+             email: 'email1', 
+             phone: '1234567890',
+              img: 'https://picsum.photos/200/100?random=1' },
+
+            { name: 'name2',
+             email: 'email2',
+              phone: '1112131415',
+               img: 'https://picsum.photos/200/100?random=2' },
+
+            { name: 'name3',
+             email: 'email3',
+              phone: '1617181920',
+               img: 'https://picsum.photos/200/100?random=3' },
+
+            { name: 'name4',
+             email: 'email4', 
+             phone: '2021222324',
+              img: 'https://picsum.photos/200/100?random=4' },
+
+            { name: 'name5',
+             email: 'email5', 
+             phone: '3132333435',
+              img: 'https://picsum.photos/200/100?random=5' },
+        ];
+
+          for(data in users){
+            document.write(`<div class="card" >
+                <h1> ${users[data].name}</h1>   
+                <h1> ${users[data].email}</h1>   
+                <h1> ${users[data].phone}</h1>
+                <img src="${users[data].img} alt="${users[data]}">"   
+                </div>`
+                );
+          }
+    </script>
+
+</body>
+
+</html>

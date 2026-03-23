@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg1 {
+            background-color: aqua;
+        }
+
+        .bg2 {
+            background-color: gold;
+        }
+
+        .bg3 {
+            background-color: blueviolet;
+        }
+
+        .bg4 {
+            background-color: tomato;
+        }
+
+        .bg5 {
+            background-color: teal;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            margin: 1%;
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const techs = ["html", "css", "javascript", "react", "node", "java", "python"];
+
+        console.log(techs.length)
+
+        let start = 1;
+        do {
+            document.write(`<div class="box">
+                <h1>${start}</h1>
+                <h2>${techs[start - 1]}</h2>
+                </div>`);
+            start++;
+        }
+        while (start <= techs.length)
+
+    </script>
+
+</body>
+
+</html>

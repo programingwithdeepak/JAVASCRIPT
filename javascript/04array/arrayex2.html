@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Example</title>
+</head>
+
+<body>
+    <div class="profile">
+        <p id="name"></p>
+        <p id="email"></p>
+        <p id="course"></p>
+        <p id="add"></p>
+    </div>
+
+
+    <script>
+        const data = [
+            "Deepak Chaudhary",
+            "deepak123@gmail.com",
+            "MERN Full Stack",
+            "Bulandshahr"
+        ];
+
+        document.getElementById('name').innerHTML = data[0];
+        document.getElementById('email').innerHTML = data[1];
+        document.getElementById('course').innerHTML = data[2];
+        document.getElementById('add').innerHTML = data[3];
+    </script>
+</body>
+
+</html>

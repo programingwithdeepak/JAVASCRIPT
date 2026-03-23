@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .bg1 {
+            background-color: tomato;
+        }
+
+        .bg2 {
+            background-color: lightgreen;
+        }
+
+        .bg3 {
+            background-color: lightcoral;
+        }
+
+        .bg4 {
+            background-color: teal;
+        }
+
+        .bg5 {
+            background-color: lightblue;
+        }
+
+        .box {
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin: 1%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        let start = 1;
+        const name = ["Aditya", "Jatin", "Naman", "Utkarsh", "Anurag"];
+        const city = ["Meerut", "Noida", "Mumbai", "Ghaziabad", "Delhi"];
+        const mail = ["aditya123@gmail.com", "jatin123@gmail.com", "naman123@gmail.com", "utkarsh123@gmail.com", "anurag123@gmail.com"];
+
+
+        while (start <= 5) {
+            document.write(
+                `<div class="box bg${start}">
+                    <h1>${name[start - 1]}</h1>
+                    <h1>${mail[start - 1]}</h1>
+                    <h1>${city[start - 1]}</h1>
+                    </div>`
+            );
+            start++;
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
